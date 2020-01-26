@@ -5,7 +5,7 @@ sudo: required
 
 env:
   global:
-    - ROLE_NAME: intellipaat
+    - ROLE_NAME: azurejenkins
   matrix:
     - MOLECULE_DISTRO: centos7
 
