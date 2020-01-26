@@ -1,0 +1,12 @@
+---
+# defaults file for azurejenkins
+AZURE_CLIENT_ID: AZURE_CLIENT_ID
+AZURE_SECRET: AZURE_SECRET
+AZURE_SUBSCRIPTION_ID: AZURE_SUBSCRIPTION_ID
+AZURE_TENANT: AZURE_TENANT
+vsize: Standard_B1s
+resource_group: bitroid
+vm_name: Jenkins
+location: westus
+user: azureuser
+paswds: Azu@551kl89#8

@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  role_name: azurejenkins
+  author: hemanth22
+  description: This role creates azure vm and install jenkins.
+  license: MIT / BSD
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - ec2
+    - cloud
+    - azure
+    - devops
+    - centos
+
+dependencies: []

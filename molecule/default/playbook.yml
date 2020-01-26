@@ -1,0 +1,11 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: false
+  vars:
+    resource_group: bitroid
+    vm_name: Jenkins
+    location: westus
+  roles:
+    - hemanth22.azurejenkins
