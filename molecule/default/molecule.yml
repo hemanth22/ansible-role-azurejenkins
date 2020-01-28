@@ -17,9 +17,6 @@ platforms:
     pre_build_image: true
 provisioner:
   name: ansible
-  env:
-    ANSIBLE_KEY: $access_key
-    ANSIBLE_VAL: $secret_key
   lint:
     name: ansible-lint
   playbooks:
