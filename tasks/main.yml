@@ -1,6 +1,4 @@
 ---
 # tasks file for azurejenkins
-- name: Initializing the azure jenkins
-  raw: echo "Calling jenkins playbook"
 # This will call the jenkins yaml file
 - include_tasks: jenkins.yml
