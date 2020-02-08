@@ -1,4 +1,7 @@
 ---
-# tasks file for azurejenkins
+# Installing pre-requistes
+- name: Installing azure python
+  pip:
+    name: ansible[azure]
 # This will call the jenkins yaml file
 - include_tasks: jenkins.yml
