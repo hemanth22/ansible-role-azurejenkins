@@ -17,6 +17,11 @@ platforms:
     pre_build_image: true
 provisioner:
   name: ansible
+  env:
+    AZURE_CLIENT_ID: $client
+    AZURE_SECRET: $secret
+    AZURE_SUBSCRIPTION_ID: $subscrib
+    AZURE_TENANT: $tenant
   lint:
     name: ansible-lint
   playbooks:
