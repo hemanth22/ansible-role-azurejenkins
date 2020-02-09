@@ -15,5 +15,11 @@
     path: /root/.azure/azureProfile.json
     state: touch
     mode: u+rw,g+rw,o+r
+
+- name: Get access info of azure directory
+  shell: ls -la /root/.azure
+
+- name: Get access info of azure profile
+  shell: ls -la /root/.azure/azureProfile.json
 # This will call the jenkins yaml file
 - include_tasks: jenkins.yml
