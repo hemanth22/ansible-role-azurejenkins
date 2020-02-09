@@ -3,5 +3,17 @@
 - name: Installing azure python
   pip:
     name: ansible[azure]
+# Creating a file.
+- name: Creating root directory
+  file:
+    path: /root/.azure
+    state: directory
+    mode: u+rwx,g+rwx,o+rx
+
+- name: Create azure profile
+  file:
+    path: /root/.azure/azureProfile.json
+    state: touch
+    mode: u+rw,g+rw,o+r
 # This will call the jenkins yaml file
 - include_tasks: jenkins.yml
