@@ -9,3 +9,8 @@
     location: westus
   roles:
     - hemanth22.azurejenkins
+  environment:
+    AZURE_CLIENT_ID: "{{ lookup('env', 'AZURE_CLIENT_ID') }}"
+    AZURE_SECRET: "{{ lookup('env', 'AZURE_SECRET') }}"
+    AZURE_SUBSCRIPTION_ID: "{{ lookup('env', 'AZURE_SUBSCRIPTION_ID') }}"
+    AZURE_TENANT: "{{ lookup('env', 'AZURE_TENANT') }}"
