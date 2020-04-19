@@ -8,7 +8,6 @@ env:
     - ROLE_NAME: azurejenkins
   matrix:
     - MOLECULE_DISTRO: centos7
-      MOLECULE_PLAYBOOK: playbook-standalone.yml
 
 install:
   - pip install molecule yamllint ansible-lint docker
