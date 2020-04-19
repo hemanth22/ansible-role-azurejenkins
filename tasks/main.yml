@@ -1,5 +1,8 @@
 ---
 # Installing pre-requistes
+- name: Update Pip
+  shell: pip install --upgrade pip
+
 - name: Installing azure python
   pip:
     name: ansible[azure]
