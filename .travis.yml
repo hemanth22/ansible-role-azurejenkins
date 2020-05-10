@@ -11,6 +11,7 @@ env:
 
 install:
   - pip install molecule yamllint ansible-lint docker
+  - apt update azure-cli
 
 before_script:
   - cd ../
