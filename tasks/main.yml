@@ -3,12 +3,9 @@
 - name: Update Pip
   shell: pip install --upgrade pip
 
-- name: Installing azure python
-  pip:
-    name: ansible[azure]
-
-- name: update azure commandline
-  shell: sudo yum install -y https://packages.microsoft.com/yumrepos/azure-cli/azure-cli-2.5.1-1.el7.x86_64.rpm
+- name: Installing Azure CommandLine
+  shell: yum install -y https://packages.microsoft.com/yumrepos/azure-cli/azure-cli-2.5.1-1.el7.x86_64.rpm
+  become: true
 # Creating a file.
 - name: Creating root directory
   file:
