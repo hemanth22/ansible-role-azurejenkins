@@ -1,15 +1,23 @@
 ---
 # Installing pre-requistes
 - name: Upgrade Pip
-  shell: pip install --upgrade pip
+  pip:
+    name: pip
+    extra_args: --upgrade
+    state: present
 
 # Installing pre-requistes
 - name: Installing azure python
   pip:
     name: ansible[azure]
+    extra_args: --upgrade
+    state: present
 
 - name: Upgrade msrestazure
-  shell: pip install --upgrade msrestazure
+  pip:
+    name: msrestazure
+    extra_args: --upgrade
+    state: present
 
 # Creating a file.
 - name: Creating root directory
