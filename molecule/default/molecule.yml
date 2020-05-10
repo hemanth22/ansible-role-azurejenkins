@@ -24,3 +24,15 @@ provisioner:
     AZURE_TENANT: $tenant
   playbooks:
     converge: ${MOLECULE_PLAYBOOK:-converge.yml}
+scenario:
+  name: default
+  test_sequence:
+    - lint
+    - destroy
+    - syntax
+    - create
+    - prepare
+    - converge
+    - side_effect
+    - cleanup
+    - destroy
