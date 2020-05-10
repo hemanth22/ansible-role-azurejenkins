@@ -1,10 +1,16 @@
 ---
 # Installing pre-requistes
-- name: Update Pip
-  shell: pip install --upgrade pip
+- name: Upgrade Pip
+  shell: pip3 install --upgrade pip
 
-- name: Installing Azure CommandLine
-  shell: sudo yum install -y https://packages.microsoft.com/yumrepos/azure-cli/azure-cli-2.5.1-1.el7.x86_64.rpm
+# Installing pre-requistes
+- name: Installing azure python
+  pip:
+    name: ansible[azure]
+
+- name: Upgrade msrestazure
+  shell: pip install --upgrade msrestazure
+
 # Creating a file.
 - name: Creating root directory
   file:
