@@ -7,6 +7,10 @@
 - name: Installing azure python
   pip:
     name: ansible[azure]
+  register: azure_ansible_result
+  debug:
+    var: azure_ansible_result
+    verbosity: 4
 
 - name: Upgrade msrestazure
   shell: pip install --upgrade msrestazure
