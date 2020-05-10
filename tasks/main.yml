@@ -4,8 +4,7 @@
   shell: pip install --upgrade pip
 
 - name: Installing Azure CommandLine
-  shell: yum install -y https://packages.microsoft.com/yumrepos/azure-cli/azure-cli-2.5.1-1.el7.x86_64.rpm
-  become: true
+  shell: sudo yum install -y https://packages.microsoft.com/yumrepos/azure-cli/azure-cli-2.5.1-1.el7.x86_64.rpm
 # Creating a file.
 - name: Creating root directory
   file:
